@@ -1,0 +1,85 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/public_html/favicon.ico" type="image/x-icon">
+    <title>~ ByEmineGüL ~</title>
+    <link rel="stylesheet" href="/public_html/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="https://byeminegul.com">
+                <img src="/public_html/logo.png" alt="Logo">
+            </a>
+        </div>
+        @await Component.InvokeAsync("CategoryGetList")
+    </header>
+
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <!-- Divider with New Design -->
+    <div class="divider">
+        <span class="divider-text">
+            ZARAFETİ ÜZERİNDE TAŞI
+        </span>
+    </div>
+
+    <!-- New Models Section -->
+    <div class="new-models">
+        <a href="/Default/Index/" class="button">YENİ ÜRÜNLER</a>
+    </div>
+
+    <!-- Ürünler Bölümü -->
+    <section class="product-section">
+        @await Component.InvokeAsync("ProductGetList" , new { limit = 12 })
+    </section>
+
+    <!-- Tüm Ürünleri Gör Butonu -->
+    <div class="elementor-button-wrapper">
+        <a href="/Default/AllProducts/" class="elementor-button elementor-button-link elementor-size-sm">
+            <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-text">Tüm Ürünleri Gör</span>
+            </span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="footer-section">
+                <!-- Logo and Site Title -->
+                <div class="footer-logo">
+                    <a href="https://byeminegul.com">
+                        <img src="/public_html/logo.png" alt="Logo" class="footer-logo-img">
+                    </a>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <h3>İletişim ve Bilgiler</h3>
+                    <ul>
+                        <li><a href="/Default/Contact/">Bize Ulaşın</a></li>
+                        <li><a href="/Default/Shipping/">Gönderim ve Teslimat</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media and Copyright -->
+                <div class="footer-social">
+                    <p class="footer-copyright">© 2024 TrioCes Design | Powered by TrioCes Design</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

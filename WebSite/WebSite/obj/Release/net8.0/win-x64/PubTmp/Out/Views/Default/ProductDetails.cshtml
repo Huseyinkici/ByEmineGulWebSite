@@ -1,0 +1,342 @@
+﻿@model WebSite.Data.Models.Product
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/public_html/styles.css">
+	<title>Ürün Detay - @Model.ProductName</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Ana kapsayıcı -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header>
+			<div class="logo">
+				<img src="/public_html/logo.png" alt="Logo">
+			</div>
+			<nav>
+				@await Component.InvokeAsync("CategoryGetList")
+			</nav>
+		</header>
+
+		<!-- Ürün Detay -->
+		<main class="product-detail">
+			<div class="product-container">
+				<!-- Ürün Resimleri Slider -->
+				@if (Model.ProductImages != null && Model.ProductImages.Any())
+				{
+					<div class="product-slider">
+						<div class="slider-container">
+							@foreach (var image in Model.ProductImages)
+							{
+								<div class="slider-item">
+									<img src="@image.ProductImageURL" alt="@Model.ProductName">
+								</div>
+							}
+						</div>
+						<button class="slider-prev" onclick="prevSlide()">❮</button>
+						<button class="slider-next" onclick="nextSlide()">❯</button>
+					</div>
+				}
+				else
+				{
+					<div class="product-image">
+						<p>Ürün resmi mevcut değil.</p>
+					</div>
+				}
+
+				<!-- Ürün Bilgileri -->
+				<div class="product-info">
+					<h1 class="product-title">@Model.ProductName</h1>
+					<p class="product-price">₺@Model.Price.ToString("F2")</p>
+					<p class="product-stock">Stok: @Model.Stock</p>
+					<p class="product-description">
+						@Model.ProductDescription
+					</p>
+					<!-- Satın Al Butonu -->
+					<div class="product-actions" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+						<p style="font-size: 18px; margin-bottom: 10px; text-align: center;">Daha Detaylı Bilgi Almak İçin</p>
+						<a href="https://www.instagram.com/byeminegul/" target="_blank" class="social-link instagram" style="text-decoration: none; margin-bottom: 10px;">
+							<button class="buy-now" style="padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; display: flex; align-items: center; gap: 10px; justify-content: center; text-align: center; background-color: #E1306C; color: white; transition: all 0.3s ease;">
+								<i class="fab fa-instagram" style="font-size: 20px;"></i> Instagram
+							</button>
+						</a>
+						<a href="https://wa.me/1234567890" target="_blank" class="social-link whatsapp" style="text-decoration: none;">
+							<button class="buy-now" style="padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; display: flex; align-items: center; gap: 10px; justify-content: center; text-align: center; background-color: #25D366; color: white; transition: all 0.3s ease;">
+								<i class="fab fa-whatsapp" style="font-size: 20px;"></i> WhatsApp
+							</button>
+						</a>
+					</div>
+
+					<!-- CSS için FontAwesome linki -->
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+				</div>
+			</div>
+
+
+		</main>
+
+		<!-- Footer -->
+		<footer id="colophon" class="site-footer">
+			<div class="container">
+				<div class="footer-section">
+					<!-- Logo and Site Title -->
+					<div class="footer-logo">
+						<a href="https://trioces.com">
+							<img src="/public_html/logo.png" alt="Logo" class="footer-logo-img">
+						</a>
+						<p class="footer-tagline">Şıklığı Yakalayın</p>
+					</div>
+
+					<!-- Footer Links -->
+					<div class="footer-links">
+						<h3>İletişim ve Bilgiler</h3>
+						<ul>
+							<li><a href="/Default/Contact/">Bize Ulaşın</a></li>
+							<li><a href="/Default/Shipping/">Gönderim ve Teslimat</a></li>
+						</ul>
+					</div>
+
+					<!-- Social Media and Copyright -->
+					<div class="footer-social">
+						<h3>Sosyal Medya</h3>
+						<div class="social-icons">
+							<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+							<a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+						</div>
+						<p class="footer-copyright">© 2024 TrioCes Design | Powered by TrioCes Design</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- CSS -->
+	<style>
+		/* Genel ayarlar */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		.wrapper {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		/* Header */
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #cf8c0eea;
+			color: #fff;
+			padding: 10px 20px;
+		}
+
+			header .logo img {
+				height: 50px;
+			}
+
+			header nav ul {
+				display: flex;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+				header nav ul li {
+					margin: 0 15px;
+				}
+
+					header nav ul li a {
+						text-decoration: none;
+						color: #fff;
+					}
+
+		.product-description {
+			white-space: pre-wrap; /* Satır sonları ve boşluklar korunur */
+			margin: 20px; /* Açıklama etrafında boşluk ekler */
+			font-size: 16px; /* Yazı boyutunu ihtiyaca göre ayarlayabilirsiniz */
+			line-height: 1.5; /* Satır aralığını düzgünleştirir */
+		}
+
+		/* Ürün Detay */
+		.product-detail {
+			flex: 1;
+			padding: 40px 20px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 40px;
+		}
+
+		.product-container {
+			display: flex;
+			flex-wrap: nowrap; /* Resimler ve detaylar yanyana kalacak */
+			gap: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.product-slider {
+			flex: 1;
+			max-width: 500px;
+			height: 500px; /* Sabit yükseklik */
+			position: relative;
+			overflow: hidden;
+		}
+
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+			height: 100%;
+		}
+
+		.slider-item {
+			min-width: 100%;
+			height: 100%;
+		}
+
+			.slider-item img {
+    width: 100%;            /* Resmin genişliği 100% olacak */
+    height: 500px;          /* Sabit yükseklik */
+    object-fit: cover;      /* Resmi düzgün kırp ve ölçekle */
+    border-radius: 8px;     /* Yuvarlatılmış kenarlar */
+}
+
+		.slider-prev,
+		.slider-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+			z-index: 2;
+		}
+
+		.slider-prev {
+			left: 10px;
+		}
+
+		.slider-next {
+			right: 10px;
+		}
+
+		.product-info {
+			flex: 1;
+			max-width: 600px;
+			padding-left: 20px;
+			padding-right: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center; /* Yüksekliği ortalamak için */
+			align-items: center; /* Yatayda ortalamak için */
+			text-align: center; /* Yazıları ortalamak için */
+		}
+
+		.product-title {
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+
+		.product-price {
+			font-size: 24px;
+			color: #e63946;
+			margin-bottom: 10px;
+		}
+
+		.product-stock {
+			font-size: 20px;
+			color: #555;
+			margin-bottom: 20px;
+		}
+
+		/* .product-actions {
+			margin-top: 20px;
+		}
+
+			.product-actions button {
+				padding: 10px 25px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				background-color: #e63946;
+				color: #fff;
+				font-size: 16px;
+			}
+
+
+				.product-actions button:hover {
+					background-color: #c9303e;
+				} */
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 15px 0;
+			margin-top: auto;
+		}
+
+			footer a {
+				color: #4caf50;
+				margin: 0 10px;
+				text-decoration: none;
+			}
+
+	</style>
+
+	<script>
+				let currentSlide = 0;
+
+		function showSlide(index) {
+			const slides = document.querySelectorAll('.slider-item');
+			const totalSlides = slides.length;
+
+			if (index >= totalSlides) {
+				currentSlide = 0;
+			} else if (index < 0) {
+				currentSlide = totalSlides - 1;
+			} else {
+				currentSlide = index;
+			}
+
+			const sliderContainer = document.querySelector('.slider-container');
+			sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+		}
+
+		function nextSlide() {
+			showSlide(currentSlide + 1);
+		}
+
+		function prevSlide() {
+			showSlide(currentSlide - 1);
+		}
+
+	</script>
+
+</body>
+</html>

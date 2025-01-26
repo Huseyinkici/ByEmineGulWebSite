@@ -1,0 +1,23 @@
+﻿@model WebSite.Data.Models.ProductImage
+
+@{
+    ViewData["Title"] = "GetProductImage";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Product Image Add Page</h1>
+<br />
+@using (Html.BeginForm("UpdateProductImage", "ProductImage", FormMethod.Post))
+{
+    @Html.Label("Image ID")
+    @Html.TextBoxFor(x => x.ProductImageID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Image URL")
+    @Html.TextBoxFor(x => x.ProductImageURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Product")
+    @Html.DropDownListFor(x => x.ProductID, (List<SelectListItem>)ViewBag.v2, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Save</button>
+
+}

@@ -1,0 +1,154 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<WebSite.Data.Models.Product>
+@{
+    ViewData["Title"] = "Ürün Listesi";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h2>Ürün Listesi</h2>
+<br />
+
+@using (Html.BeginForm("Index", "Product", FormMethod.Get))
+{
+    <p>
+        Ürün Adı :
+        <input type="search" id="queryInput" name="query" value="@ViewBag.Query" />
+        <input type="submit" value="Ara" />
+        <button type="button" id="clearButton">Temizle</button>
+    </p>
+}
+
+<script>
+    document.getElementById('clearButton').addEventListener('click', function () {
+        // Input kutusunu temizle
+        document.getElementById('queryInput').value = '';
+
+        // Formu tekrar gönder (boş arama ile)
+        document.forms[0].submit();
+    });
+</script>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th> <!-- Sıralama için -->
+        <th>Ürün Adı</th>
+        <th>Ürün Fiyatı</th>
+        <th>Kategori Adı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var x = Model[i];
+        <tr>
+            <td>@(i + 1)</td> <!-- Sıralama numarası -->
+            <td>@x.ProductName</td>
+            <td>@x.Price</td>
+            <td>@x.Category.CategoryName</td>
+            <td>
+                <a href="#" class="btn btn-danger" onclick="showConfirmModal('@x.ProductID')">Sil</a>
+            </td>
+            <td><a href="/Product/ProductGet/@x.ProductID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+<script>
+    function showConfirmModal(productId) {
+        // Modalı göster
+        document.getElementById('confirmModal').style.display = 'flex';
+
+        // Evet butonuna tıklandığında
+        document.getElementById('yesButton').onclick = function () {
+            window.location.href = "/Product/DeleteProduct/" + productId;
+        };
+
+        // Hayır butonuna tıklandığında
+        document.getElementById('noButton').onclick = function () {
+            document.getElementById('confirmModal').style.display = 'none';
+        };
+    }
+</script>
+
+<style>
+    /* Modal arka planı */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Modal içeriği */
+    .modal-content {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        width: 300px; /* Genişlik */
+    }
+
+        .modal-content h2 {
+            margin: 0 0 15px;
+            color: #333;
+        }
+
+        .modal-content p {
+            margin: 0 0 20px;
+            color: #555;
+        }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-confirm {
+        background-color: #dc3545; /* Kırmızı */
+        color: white;
+    }
+
+        .btn-confirm:hover {
+            background-color: #c82333; /* Daha koyu kırmızı */
+        }
+
+    .btn-cancel {
+        background-color: #6c757d; /* Gri */
+        color: white;
+    }
+
+        .btn-cancel:hover {
+            background-color: #5a6268; /* Daha koyu gri */
+        }
+</style>
+
+<div id="confirmModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h2>Onay</h2>
+        <p>Bu ürünü silmek istediğinize emin misiniz?</p>
+        <div class="modal-buttons">
+            <button id="yesButton" class="btn btn-confirm">Evet</button>
+            <button id="noButton" class="btn btn-cancel">Hayır</button>
+        </div>
+    </div>
+</div>
+
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
+
+<a href="/Product/AddProduct/" class="btn btn-primary">Yeni Ürün</a>

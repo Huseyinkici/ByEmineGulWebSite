@@ -1,0 +1,424 @@
+﻿@model WebSite.Data.Models.Product
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="~/public_html/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/public_html/productDetails.css">
+	<title>~ Ürün Detay ~ @Model.ProductName ~</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Ana kapsayıcı -->
+	<div class="wrapper">
+		<!-- Header -->
+		<header>
+			<div class="logo">
+				<a href="https://byeminegul.com">
+					<img src="/public_html/logo.png" alt="Logo">
+				</a>
+			</div>
+			<nav>
+				@await Component.InvokeAsync("CategoryGetList")
+			</nav>
+		</header>
+
+		<!-- Ürün Detay -->
+		<main class="product-detail">
+			<div class="product-container">
+				<!-- Ürün Resimleri Slider -->
+				@if (Model.ProductImages != null && Model.ProductImages.Any())
+				{
+					<div class="product-slider">
+						<div class="slider-container">
+							@foreach (var image in Model.ProductImages)
+							{
+								<div class="slider-item">
+									<img src="@image.ProductImageURL" alt="@Model.ProductName">
+								</div>
+							}
+						</div>
+						<button class="slider-prev" onclick="prevSlide()">❮</button>
+						<button class="slider-next" onclick="nextSlide()">❯</button>
+					</div>
+				}
+				else
+				{
+					<div class="product-image">
+						<p>Ürün resmi mevcut değil.</p>
+					</div>
+				}
+
+				<!-- Ürün Bilgileri -->
+				<div class="product-info">
+					<h1 class="product-title">@Model.ProductName</h1>
+					<p class="product-price">Fiyat: @Model.Price.ToString("F2") ₺</p>
+					<p>~ Zamansız, aynı zamanda şıklığı ile zarafeti üzerinde taşı ~</p>
+					<br />
+					<p>@Model.ProductDescription</p>
+					<br />
+					<p>Satın alımlarda, detaylı ölçüleri WhatsApp hattımızdan veya Instagram üzerinden ürün görseli ile birlikte iletmenizi rica ederiz, keyifli alışverişler dileriz.</p>
+					<!-- Satın Al Butonu -->
+					<div class="product-actions" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+						<p style="font-size: 18px; margin-bottom: 10px; text-align: center;">Daha Detaylı Bilgi Almak İçin</p>
+						<a href="https://www.instagram.com/byeminegul/" target="_blank" class="social-link instagram" style="text-decoration: none; margin-bottom: 10px;">
+							<button class="buy-now" style="padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; display: flex; align-items: center; gap: 10px; justify-content: center; text-align: center; background-color: #E1306C; color: white; transition: all 0.3s ease;">
+								<i class="fab fa-instagram" style="font-size: 20px;"></i> Instagram
+							</button>
+						</a>
+						<p style="font-size: 18px; margin-bottom: 10px; text-align: center;">Sipariş Vermek İçin</p>
+						<a href="https://wa.me/905379477974" target="_blank" class="social-link whatsapp" style="text-decoration: none;">
+							<button class="buy-now" style="padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; display: flex; align-items: center; gap: 10px; justify-content: center; text-align: center; background-color: #25D366; color: white; transition: all 0.3s ease;">
+								<i class="fab fa-whatsapp" style="font-size: 20px;"></i> WhatsApp
+							</button>
+						</a>
+						<br />
+					</div>
+					<li class="right-aligned">
+						<a href="/Default/SizeDetails/">Nasıl Ölçü Alınır?</a>
+					</li>
+
+
+					<!-- CSS için FontAwesome linki -->
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+				</div>
+			</div>
+
+		</main>
+
+		<!-- Footer -->
+		<footer id="colophon" class="site-footer">
+			<div class="container">
+				<div class="footer-section">
+					<!-- Logo and Site Title -->
+					<div class="footer-logo">
+						<a href="https://byeminegul.com">
+							<img src="/public_html/logo.png" alt="Logo" class="footer-logo-img">
+						</a>
+					</div>
+
+					<!-- Footer Links -->
+					<div class="footer-links">
+						<h3>İletişim ve Bilgiler</h3>
+						<ul>
+							<li><a href="/Default/Contact/">Bize Ulaşın</a></li>
+							<li><a href="/Default/Shipping/">Gönderim ve Teslimat</a></li>
+						</ul>
+					</div>
+
+					<!-- Social Media and Copyright -->
+					<div class="footer-social">
+						<p class="footer-copyright">© 2024 TrioCes Design | Powered by TrioCes Design</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		let currentSlide = 0;
+		let startX = 0;
+		let endX = 0;
+
+		function showSlide(index) {
+			const slides = document.querySelectorAll('.slider-item');
+			const totalSlides = slides.length;
+
+			if (index >= totalSlides) {
+				currentSlide = 0;
+			} else if (index < 0) {
+				currentSlide = totalSlides - 1;
+			} else {
+				currentSlide = index;
+			}
+
+			const sliderContainer = document.querySelector('.slider-container');
+			sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+			sliderContainer.style.transition = 'transform 0.5s ease-in-out';
+		}
+
+		function nextSlide() {
+			showSlide(currentSlide + 1);
+		}
+
+		function prevSlide() {
+			showSlide(currentSlide - 1);
+		}
+
+		// Dokunma işlemlerini başlatma
+		function handleTouchStart(event) {
+			startX = event.touches[0].clientX;
+		}
+
+		// Dokunma sırasında hareketi takip etme
+		function handleTouchMove(event) {
+			endX = event.touches[0].clientX;
+		}
+
+		// Dokunma işlemini tamamlama ve yön belirleme
+		function handleTouchEnd() {
+			const threshold = 50; // Hareketin geçerli sayılması için minimum mesafe
+			const deltaX = endX - startX;
+
+			if (Math.abs(deltaX) > threshold) {
+				if (deltaX > 0) {
+					prevSlide(); // Sağdan sola kaydırma
+				} else {
+					nextSlide(); // Soldan sağa kaydırma
+				}
+			}
+		}
+
+		// Olay dinleyicilerini ekle
+		document.addEventListener('DOMContentLoaded', () => {
+			const sliderContainer = document.querySelector('.slider-container');
+
+			sliderContainer.addEventListener('touchstart', handleTouchStart);
+			sliderContainer.addEventListener('touchmove', handleTouchMove);
+			sliderContainer.addEventListener('touchend', handleTouchEnd);
+
+			// İlk slaytı göster
+			showSlide(currentSlide);
+		});
+	</script>
+
+
+
+	<!-- CSS -->
+	<style>
+
+		/* Liste öğesini sağa hizalama */
+		.right-aligned {
+			border: 2px solid #000000;
+			text-align: right; /* Metni sağa hizalar */
+			display: block; /* Liste öğesini blok olarak gösterir */
+		}
+
+			/* Bağlantı (a etiketi) görünümü */
+			.right-aligned a {
+				text-decoration: none; /* Alt çizgiyi kaldırır */
+				color: #000; /* Yazı rengini siyah yapar */
+				padding: 10px; /* İç boşluk ekler */
+				display: inline-block; /* Bağlantıyı yatayda hizalar */
+			}
+
+				/* İsteğe bağlı olarak hover (üzerine gelme) efekti */
+				.right-aligned a:hover {
+					color: #cf8c0eea; /* Rengi değiştirir */
+					text-decoration: underline; /* Alt çizgiyi ekler */
+				}
+
+
+		/* Genel Ayarlar */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Georgia', serif;
+			background-color: #f9f9f9;
+			color: #333;
+			line-height: 1.6;
+			letter-spacing: 0.5px;
+		}
+
+		.logo img {
+			height: 50px; /* Logo boyutunu kısıtladığınızdan emin olun */
+			max-width: 150px; /* Genişliği de kontrol altına alın */
+			object-fit: contain; /* Boyutlandırmada doğru görünmesi için */
+		}
+
+		/* Header */
+		header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px 20px;
+			background-color: #FFF2D3;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		nav {
+			flex: 1; /* Logo ve nav arasında boşluk bırakır */
+		}
+
+			nav ul {
+				display: flex;
+				justify-content: center;
+				gap: 30px;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+				nav ul li a {
+					text-decoration: none;
+					color: black;
+					font-weight: bold;
+					transition: color 0.3s ease, transform 0.3s ease; /* Hover için transform ekledik */
+				}
+
+					nav ul li a:hover {
+						color: burlywood;
+						transform: translateY(10px); /* Hover efektine hafif yukarı hareket ekledik */
+					}
+
+		/* Spacer */
+		.spacer {
+			height: 5px;
+		}
+
+		/* Divider */
+		.divider {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			text-align: center;
+			margin: 20px 40px;
+			border-radius: 5px;
+			background-color: #f9f9f9;
+			padding: 10px 20px;
+		}
+
+		.divider-text {
+			font-size: 20px; /* Font boyutunu artırdık */
+			font-weight: bold;
+			color: #444; /* Renk değişimi */
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, color 0.3s ease;
+		}
+
+			.divider-text i {
+				margin: 0 5px;
+				color: #f39c12;
+			}
+
+			.divider-text:hover {
+				transform: scale(1.1);
+				color: #f39c12;
+			}
+
+		.divider::before,
+		.divider::after {
+			content: '';
+			flex-grow: 1;
+			height: 2px;
+			background-color: #dcdcdc;
+			margin: 0 15px;
+		}
+
+		/* Ürün Detay */
+
+		.product-detail {
+			flex: 1;
+			padding: 40px 20px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 40px;
+		}
+
+		.product-container {
+			display: flex;
+			flex-wrap: nowrap; /* Resimler ve detaylar yanyana kalacak */
+			gap: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.product-slider {
+			flex: 1;
+			max-width: 500px;
+			height: 500px; /* Sabit yükseklik */
+			position: relative;
+			overflow: hidden;
+		}
+
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+			height: 100%;
+		}
+
+		.slider-item {
+			min-width: 100%;
+			height: 100%;
+		}
+
+			.slider-item img {
+				width: 100%; /* Resmin genişliği 100% olacak */
+				height: 500px; /* Sabit yükseklik */
+				object-fit: cover; /* Resmi düzgün kırp ve ölçekle */
+				border-radius: 8px; /* Yuvarlatılmış kenarlar */
+				transition: transform 0.3s ease-in-out; /* Efekt geçiş süresi */
+			}
+
+				.slider-item img:hover {
+					transform: scale(1.1); /* %10 büyütme */
+					cursor: pointer; /* İmleç el işaretine dönüşür */
+				}
+
+		.slider-prev,
+		.slider-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+			z-index: 2;
+		}
+
+		.slider-prev {
+			left: 10px;
+		}
+
+		.slider-next {
+			right: 10px;
+		}
+
+		.product-info {
+			flex: 1;
+			max-width: 600px;
+			padding-left: 20px;
+			padding-right: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center; /* Yüksekliği ortalamak için */
+			align-items: center; /* Yatayda ortalamak için */
+			text-align: center; /* Yazıları ortalamak için */
+		}
+
+		.product-title {
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+
+		.product-price {
+			font-size: 24px;
+			color: #cf8c0eea;
+			margin-bottom: 10px;
+		}
+
+		.product-stock {
+			font-size: 20px;
+			color: #555;
+			margin-bottom: 20px;
+		}
+
+	</style>
+
+
+</body>
+</html>

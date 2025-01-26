@@ -1,0 +1,150 @@
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core
+
+@model IPagedList<WebSite.Data.Models.ProductImage>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Product Image List</h1>
+<br />
+
+@using (Html.BeginForm("Index", "ProductImage", FormMethod.Get))
+{
+    <p>
+        <input type="search" id="queryInput" name="query" value="@ViewBag.Query" />
+        <input type="submit" value="Find" />
+        <button type="button" id="clearButton">Clear</button>
+    </p>
+}
+<script>
+    document.getElementById('clearButton').addEventListener('click', function () {
+        // Input kutusunu temizle
+        document.getElementById('queryInput').value = '';
+
+        // Ana tabloya dönmek için formu tekrar gönder
+        document.forms[0].submit();
+    });
+</script>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Product Image ID</th>
+        <th>Product Name</th>
+        <th>Product Image URL</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ProductImageID</td>
+            <td>@x.Product.ProductName</td>
+            <td>@x.ProductImageURL</td>
+            <td>
+                <a href="#" class="btn btn-danger" onclick="showConfirmModal('@x.ProductImageID')">Delete</a>
+            </td>
+            <td>
+                <a href="/ProductImage/GetProductImage/@x.ProductImageID" class="btn btn-success">Update</a>
+            </td>
+        </tr>
+    }
+<div id="confirmModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h2>Onay</h2>
+        <p>Bu ürünü silmek istediğinize emin misiniz?</p>
+        <div class="modal-buttons">
+            <button id="yesButton" class="btn btn-confirm">Evet</button>
+            <button id="noButton" class="btn btn-cancel">Hayır</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Modal arka planı */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Modal içeriği */
+    .modal-content {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        width: 300px; /* Genişlik */
+    }
+
+        .modal-content h2 {
+            margin: 0 0 15px;
+            color: #333;
+        }
+
+        .modal-content p {
+            margin: 0 0 20px;
+            color: #555;
+        }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-confirm {
+        background-color: #dc3545; /* Kırmızı */
+        color: white;
+    }
+
+        .btn-confirm:hover {
+            background-color: #c82333; /* Daha koyu kırmızı */
+        }
+
+    .btn-cancel {
+        background-color: #6c757d; /* Gri */
+        color: white;
+    }
+
+        .btn-cancel:hover {
+            background-color: #5a6268; /* Daha koyu gri */
+        }
+</style>
+
+<script>
+    function showConfirmModal(productImageId) {
+        // Modalı göster
+        document.getElementById('confirmModal').style.display = 'flex';
+
+        // Evet butonuna tıklandığında
+        document.getElementById('yesButton').onclick = function () {
+            window.location.href = "/ProductImage/DeleteProductImage/" + productImageId;
+        };
+
+        // Hayır butonuna tıklandığında
+        document.getElementById('noButton').onclick = function () {
+            document.getElementById('confirmModal').style.display = 'none';
+        };
+    }
+    </script>
+</table>
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
+<a href="/ProductImage/AddProductImage/" class="btn btn-primary">New Product Image</a>

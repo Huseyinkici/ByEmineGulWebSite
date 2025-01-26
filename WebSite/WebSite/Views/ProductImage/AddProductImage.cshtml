@@ -1,0 +1,20 @@
+﻿@model WebSite.Data.Models.ProductImage
+@{
+	ViewData["Title"] = "AddProductImage";
+	Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Ürün Fotoğrafı Ekleme Sayfası</h1>
+<br />
+
+@using (Html.BeginForm("AddProductImage", "ProductImage", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+	@Html.Label("Fotoğraf Seçme")
+	<input type="file" name="ProductImageURL" multiple class="form-control" />
+	<br />
+
+	@Html.Label("Ürün Seçme")
+	@Html.DropDownListFor(x => x.ProductID,(List<SelectListItem>)ViewBag.v2,new { @class = "form-control" })
+	<br />
+	<button class="btn btn-info">Kaydet</button>
+}

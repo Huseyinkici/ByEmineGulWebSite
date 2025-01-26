@@ -1,0 +1,30 @@
+﻿@model WebSite.Data.Models.ProductAdd
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Product Add Page</h1>
+<br />
+<form class="form-group" action="AddProduct" asp-controller="Product" method="post" enctype="multipart/form-data">
+    @Html.Label("Product Name")
+    @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Stock")
+    @Html.TextBoxFor(x => x.Stock, new { @class = "form-control" })
+    <br />
+    @Html.Label("Price")
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <br />
+    @Html.Label("Choose Image")
+    <input type="file" name="ImageURL" />
+    <br />
+    @Html.Label("Category")
+    @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.v1, new{@class="form-control"})
+    <br />
+    @Html.Label("Description")
+    @Html.TextAreaFor(x => x.ProductDescription, new { @class = "form-control", style = "width: 100%; height: 200px;" })
+    <br />
+    <button class="btn btn-primary">Save</button>
+
+</form>

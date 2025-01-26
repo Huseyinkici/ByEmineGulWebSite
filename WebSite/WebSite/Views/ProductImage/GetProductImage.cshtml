@@ -1,0 +1,23 @@
+﻿@model WebSite.Data.Models.ProductImage
+
+@{
+    ViewData["Title"] = "GetProductImage";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Ürün Fotoğrafı Güncelleme Sayfası</h1>
+<br />
+@using (Html.BeginForm("UpdateProductImage", "ProductImage", FormMethod.Post))
+{
+    @Html.Label("Fotoğraf ID")
+    @Html.TextBoxFor(x => x.ProductImageID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Fotoğraf URL")
+    @Html.TextBoxFor(x => x.ProductImageURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ürün")
+    @Html.DropDownListFor(x => x.ProductID, (List<SelectListItem>)ViewBag.v2, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+
+}

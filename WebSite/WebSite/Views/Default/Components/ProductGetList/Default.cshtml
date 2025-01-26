@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WebSite.Data.Models.Product>
+
+<div class="product-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    @foreach (var item in Model)
+    {
+        <div class="product-card" style="width: 300px; border: 1px solid #ddd; padding: 10px; border-radius: 8px; text-align: center;">
+            <a href="/Default/ProductDetails/@item.ProductID" style="text-decoration: none; color: inherit;">
+                <img src="/public_html/images/resimler/@item.ImageURL"
+                     alt="@item.ProductName"
+                     class="product-image"
+                     style="width: 250px; height: 500px; object-fit: cover; border-radius: 4px;">
+
+                <h3 class="product-name" style="font-size: 18px; margin: 10px 0;">@item.ProductName</h3>
+                <h4 class="product-price" style="color: #28a745; font-size: 16px; margin: 5px 0;">@item.Price ₺</h4>
+            </a>
+        </div>
+    }
+</div>

@@ -1,0 +1,933 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\obj\\Release\\net8.0\\win-x64\\scopedcss\\projectbundle\\WebSite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebSite.zv4ghoe9ok.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\css\\main.css",
+      "PackagePath": "staticwebassets\\Login_v6\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\css\\util.css",
+      "PackagePath": "staticwebassets\\Login_v6\\css\\util.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\Login_v6\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\images\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\Login_v6\\images\\avatar-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\Login_v6\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\images\\login.png",
+      "PackagePath": "staticwebassets\\Login_v6\\images\\login.png"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\index.html",
+      "PackagePath": "staticwebassets\\Login_v6\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\js\\main.js",
+      "PackagePath": "staticwebassets\\Login_v6\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\Login_v6\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\Login_v6\\vendor\\select2\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\.htaccess",
+      "PackagePath": "staticwebassets\\public_html\\.htaccess"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\contact.css",
+      "PackagePath": "staticwebassets\\public_html\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\contact.html",
+      "PackagePath": "staticwebassets\\public_html\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\default.php",
+      "PackagePath": "staticwebassets\\public_html\\default.php"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\public_html\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\product1.jpeg",
+      "PackagePath": "staticwebassets\\public_html\\images\\product1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\0b8c7fa1-274b-4176-a1f0-b255b7e1f666.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\0b8c7fa1-274b-4176-a1f0-b255b7e1f666.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\0df02b1e-aeb2-4b5d-9dbc-e84394d35907.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\0df02b1e-aeb2-4b5d-9dbc-e84394d35907.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\1630e2e4-439d-4947-bfb0-482aa8795751.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\1630e2e4-439d-4947-bfb0-482aa8795751.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\182fc19e-2e01-4dbe-bf2c-f973f6d40f8d.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\182fc19e-2e01-4dbe-bf2c-f973f6d40f8d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\25c193f0-4956-444c-a84e-ab3535e88568.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\25c193f0-4956-444c-a84e-ab3535e88568.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\2d08e6b0-bafc-4592-bcf0-b1b2763d4162.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\2d08e6b0-bafc-4592-bcf0-b1b2763d4162.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\33938c60-3c8c-42a2-87fa-b7b1f889a254.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\33938c60-3c8c-42a2-87fa-b7b1f889a254.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\347ee200-cac8-4f89-bd4f-9eb2423e2eae.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\347ee200-cac8-4f89-bd4f-9eb2423e2eae.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\36258224-3e32-4a82-8e34-d9e70ee6e595.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\36258224-3e32-4a82-8e34-d9e70ee6e595.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\3c7f6a47-1a83-414d-837a-d334dffdfffe.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\3c7f6a47-1a83-414d-837a-d334dffdfffe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\47eb6e95-6aed-4e0f-bd88-522cf33d42ae.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\47eb6e95-6aed-4e0f-bd88-522cf33d42ae.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\4c275124-8bf6-4478-be02-a75713ec9088.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\4c275124-8bf6-4478-be02-a75713ec9088.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\4f1e83d3-e043-4aa8-b681-09c181a61d44.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\4f1e83d3-e043-4aa8-b681-09c181a61d44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\50bcb593-2201-4880-97cf-b99bf5a3dff1.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\50bcb593-2201-4880-97cf-b99bf5a3dff1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\5bec37a3-2b9f-4ffa-a51a-f5258cf8b148.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\5bec37a3-2b9f-4ffa-a51a-f5258cf8b148.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\69594c72-a8d1-4614-8498-8d0d72d376d9.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\69594c72-a8d1-4614-8498-8d0d72d376d9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\6c99964b-9dd6-4e65-9dff-1a6e00c9457b.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\6c99964b-9dd6-4e65-9dff-1a6e00c9457b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\6e87b3f1-31eb-421b-9e16-41c620ae5ac3.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\6e87b3f1-31eb-421b-9e16-41c620ae5ac3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\8b159233-7c1e-4295-b523-871c1db77dfc.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\8b159233-7c1e-4295-b523-871c1db77dfc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\8c7d20f1-b14a-41d7-82b4-66dd7e4e05b0.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\8c7d20f1-b14a-41d7-82b4-66dd7e4e05b0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\8ed611d2-03b2-4606-8fbd-1dae3b2f7979.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\8ed611d2-03b2-4606-8fbd-1dae3b2f7979.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\9bec7ce3-8aaa-471d-8779-3bf2718145f6.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\9bec7ce3-8aaa-471d-8779-3bf2718145f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\a260b180-b9ec-4d05-bf01-f9190a3e1f8d.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\a260b180-b9ec-4d05-bf01-f9190a3e1f8d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\a7d6c56b-4c9f-432a-8538-da2c14b7365f.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\a7d6c56b-4c9f-432a-8538-da2c14b7365f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\b0e521c2-aac9-4cfd-bffb-43f655d1c721.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\b0e521c2-aac9-4cfd-bffb-43f655d1c721.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\b8353339-542d-4640-bd4d-21d6d1835d13.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\b8353339-542d-4640-bd4d-21d6d1835d13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\bebd014a-ba1a-4238-99fa-1c9b6f05da11.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\bebd014a-ba1a-4238-99fa-1c9b6f05da11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\ce869954-f0fc-4d73-a26d-7d8ab5e76ce7.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\ce869954-f0fc-4d73-a26d-7d8ab5e76ce7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\cfc443bd-1712-43c4-9769-4d7dbf2524ba.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\cfc443bd-1712-43c4-9769-4d7dbf2524ba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\d1654966-e39f-409e-9f61-0de425ae237e.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\d1654966-e39f-409e-9f61-0de425ae237e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\d18cde55-b243-4b3b-854a-40c83569374c.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\d18cde55-b243-4b3b-854a-40c83569374c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\db362746-edee-455f-baac-f8523464c509.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\db362746-edee-455f-baac-f8523464c509.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler1\\eeed5645-8978-47ef-a7ca-9eef4bfd4d06.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler1\\eeed5645-8978-47ef-a7ca-9eef4bfd4d06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\00182ce1-d1d2-48c2-9b1c-462ac20a7354.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\00182ce1-d1d2-48c2-9b1c-462ac20a7354.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\2cb6db03-31e9-42ba-b06d-564223c40b5d.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\2cb6db03-31e9-42ba-b06d-564223c40b5d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\2e057dc7-cca7-49eb-9186-0b6075a9eb5d.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\2e057dc7-cca7-49eb-9186-0b6075a9eb5d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\3487b706-52a9-47c9-b364-53125fc581db.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\3487b706-52a9-47c9-b364-53125fc581db.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\376e5adc-59ba-49d1-8031-2826f8d43aea.png",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\376e5adc-59ba-49d1-8031-2826f8d43aea.png"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\450586f2-275d-41e1-92f0-7acd0da7331a.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\450586f2-275d-41e1-92f0-7acd0da7331a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\51ad8ec0-4cee-4eab-b34b-37c966486f3b.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\51ad8ec0-4cee-4eab-b34b-37c966486f3b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\527391c1-44ae-4f8e-a51c-08638970fd09.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\527391c1-44ae-4f8e-a51c-08638970fd09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\5581bb89-fb27-46f9-b80d-1df62c30bb94.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\5581bb89-fb27-46f9-b80d-1df62c30bb94.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\64d908a7-51ff-4d90-8440-531fa768846a.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\64d908a7-51ff-4d90-8440-531fa768846a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\6b886482-4a8a-40f5-8bb3-154990c8dffa.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\6b886482-4a8a-40f5-8bb3-154990c8dffa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\8ca1b713-82dd-4002-ae08-d54b0436bb16.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\8ca1b713-82dd-4002-ae08-d54b0436bb16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\9b5c4189-5bba-4ec8-88a1-fd9ddf50b5ba.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\9b5c4189-5bba-4ec8-88a1-fd9ddf50b5ba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\be86cd07-d369-49e6-b334-0ac01a3beb65.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\be86cd07-d369-49e6-b334-0ac01a3beb65.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\c2015b78-7a44-4d7f-9c98-8ca428d77dcc.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\c2015b78-7a44-4d7f-9c98-8ca428d77dcc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\cdef6e3a-0cca-4602-aa77-f039aedbdb81.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\cdef6e3a-0cca-4602-aa77-f039aedbdb81.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\d3601716-e42b-4b52-83c7-7b6892320c6f.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\d3601716-e42b-4b52-83c7-7b6892320c6f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\d7cda9ac-a021-48c0-b584-c5d9d5c0b8e1.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\d7cda9ac-a021-48c0-b584-c5d9d5c0b8e1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\images\\resimler\\ff7e2f12-439c-4af4-a734-e51b0052b90e.jpg",
+      "PackagePath": "staticwebassets\\public_html\\images\\resimler\\ff7e2f12-439c-4af4-a734-e51b0052b90e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\index.html",
+      "PackagePath": "staticwebassets\\public_html\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\logo.png",
+      "PackagePath": "staticwebassets\\public_html\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\product1.html",
+      "PackagePath": "staticwebassets\\public_html\\product1.html"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\shipping.css",
+      "PackagePath": "staticwebassets\\public_html\\shipping.css"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\shipping.html",
+      "PackagePath": "staticwebassets\\public_html\\shipping.html"
+    },
+    {
+      "Id": "C:\\Users\\wn\\Desktop\\WebSite\\WebSite\\wwwroot\\public_html\\styles.css",
+      "PackagePath": "staticwebassets\\public_html\\styles.css"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.WebSite.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.WebSite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.build.WebSite.props",
+      "PackagePath": "build\\WebSite.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.buildMultiTargeting.WebSite.props",
+      "PackagePath": "buildMultiTargeting\\WebSite.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.buildTransitive.WebSite.props",
+      "PackagePath": "buildTransitive\\WebSite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

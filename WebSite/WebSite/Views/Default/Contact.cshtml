@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/public_html/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/public_html/contact.css"> <!-- Yeni stil dosyası -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>~ İLETİŞİM ~</title>
+</head>
+<body class="contact-page">
+    <header>
+        <div class="logo">
+            <a href="https://byeminegul.com">
+                <img src="/public_html/logo.png" alt="Logo">
+            </a>
+        </div>
+        @await Component.InvokeAsync("CategoryGetList")
+    </header>
+
+    <div class="contact-section">
+        <h1>İletişim Bilgilerimiz</h1>
+        <p>Aşağıda bizimle iletişime geçebileceğiniz bilgileri bulabilirsiniz.</p>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>İsim</h3>
+                <p>ByEmineGüL</p>
+            </div>
+            <div class="info-item">
+                <h3>Detaylı Bilgi İçin</h3>
+                <h2>
+                    <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/p/CRbKtK9JzfS/">
+                        Instagram Hesabımız
+                    </a>
+                </h2>
+            </div>
+
+            <div class="info-item">
+                <h3>Sipariş Vermek İçin</h3>
+                <h2>
+                    <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/905379477974">+90 537 947 79 74</a>
+                </h2>
+            </div>
+
+    </div>
+
+        <footer id="colophon" class="site-footer">
+            <div class="container">
+                <div class="footer-section">
+                    <!-- Logo and Site Title -->
+                    <div class="footer-logo">
+                        <a href="https://byeminegul.com">
+                            <img src="/public_html/logo.png" alt="Logo" class="footer-logo-img">
+                        </a>
+                    </div>
+
+                    <!-- Footer Links -->
+                    <div class="footer-links">
+                        <h3>İletişim ve Bilgiler</h3>
+                        <ul>
+                            <li><a href="/Default/Contact/">Bize Ulaşın</a></li>
+                            <li><a href="/Default/Shipping/">Gönderim ve Teslimat</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media and Copyright -->
+                    <div class="footer-social">
+                        <p class="footer-copyright">© 2024 TrioCes Design | Powered by TrioCes Design</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
+

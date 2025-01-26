@@ -1,0 +1,421 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    height: 50px; /* Logo boyutunu kısıtladığınızdan emin olun */
+    max-width: 150px; /* Genişliği de kontrol altına alın */
+    object-fit: contain; /* Boyutlandırmada doğru görünmesi için */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #FFF2D3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    flex: 1; /* Logo ve nav arasında boşluk bırakır */
+}
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #494747;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease; /* Hover için transform ekledik */
+        }
+
+            nav ul li a:hover {
+                color: burlywood;
+                transform: translateY(10px); /* Hover efektine hafif yukarı hareket ekledik */
+            }
+
+/* Spacer */
+.spacer {
+    height: 5px;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin: 20px 40px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+}
+
+.divider-text {
+    font-size: 20px; /* Font boyutunu artırdık */
+    font-weight: bold;
+    color: #444; /* Renk değişimi */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+    .divider-text i {
+        margin: 0 5px;
+        color: #f39c12;
+    }
+
+    .divider-text:hover {
+        transform: scale(1.1);
+        color: #f39c12;
+    }
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex-grow: 1;
+    height: 2px;
+    background-color: #dcdcdc;
+    margin: 0 15px;
+}
+
+/* Genel footer stili */
+.site-footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    color: #333;
+}
+
+    .site-footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+.footer-tagline {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+    .footer-links h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+            .footer-links ul li a:hover {
+                color: #000;
+            }
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+    .footer-social h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+    .social-icons .social-icon {
+        font-size: 20px;
+        color: #555;
+        text-decoration: none;
+    }
+
+        .social-icons .social-icon:hover {
+            color: #000;
+        }
+
+.footer-copyright {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/*Contact*/
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+    .contact-text p {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .contact-text ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+        .contact-text ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+            .contact-text ul li:before {
+                content: "•"; /* Add bullet symbol */
+                color: #cf8c0eea; /* Blue color for bullet */
+                font-size: 20px;
+                position: absolute;
+                left: -20px;
+                top: 0;
+            }
+
+    .contact-text p + ul {
+        margin-top: 20px;
+    }
+
+    .contact-text p span {
+        font-style: italic;
+        color: #cf8c0eea;
+    }
+
+.contact-table {
+    border-radius: 10px; /* Tabloyu yuvarlak kenarlarla yapmak için */
+    overflow: hidden; /* Kenarların düzgün görünmesi için */
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #494747;
+}
+
+    .contact-table th,
+    .contact-table td {
+        border: 1px solid #494747;
+        padding: 10px;
+    }
+
+    .contact-table th {
+        background-color: #f0e3da;
+        color: #494747;
+    }
+
+    .contact-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .contact-table tfoot td {
+        text-align: center;
+        font-size: 14px;
+        color: #494747;
+        padding: 10px;
+        background-color: #f0e3da;
+    }
+
+    .contact-table tfoot span {
+        font-style: italic;
+        color: #494747;
+    }
+
+.contact-image {
+    width: 100%; /* Konteynerin genişliğini ayarlayın */
+    max-width: 1000px; /* İstediğiniz maksimum genişlik */
+    margin: 10px; /* Ortalamak için */
+}
+
+    .contact-image img {
+        border-radius: 10px;
+        width: 100%; /* Görseli konteynerın tamamına yayar */
+        height: auto; /* Görselin oranını korur */
+        max-width: none; /* Görselin genişliğini sınırlamaz */
+    }
+
+/* Medya Sorguları */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-content {
+        flex-direction: column; /* Fotoğraf ve tabloyu dikey yerleştirir */
+        text-align: center;
+    }
+
+    .contact-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-image {
+        margin-bottom: 20px; /* Fotoğraf ile tablo arasında boşluk ekleyelim */
+    }
+
+    .contact-table {
+        margin-top: 20px; /* Tablonun üstüne boşluk ekleyelim */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .divider {
+        flex-direction: column;
+    }
+
+        .divider::before,
+        .divider::after {
+            display: none;
+        }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-content {
+        flex-direction: column; /* Fotoğraf ve tabloyu dikey yerleştirir */
+        text-align: center;
+    }
+
+    .contact-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-image {
+        margin-bottom: 20px; /* Fotoğraf ile tablo arasına boşluk ekleyelim */
+    }
+
+    .contact-table {
+        margin-top: 20px; /* Tablonun üstüne boşluk ekleyelim */
+    }
+
+    .divider {
+        flex-direction: column;
+    }
+
+        .divider::before,
+        .divider::after {
+            display: none;
+        }
+
+    @media (max-width: 480px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .contact-content {
+            flex-direction: column; /* Fotoğraf ve tabloyu dikey hizalar */
+            text-align: center;
+        }
+
+        .contact-text {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .contact-image {
+            width: 100%; /* Fotoğrafın genişliğini tamamen kapsar */
+            height: 250px; /* Fotoğrafın yüksekliğini artırarak daha büyük yaparız */
+            object-fit: cover; /* Fotoğrafı genişletirken orantısını bozmadan büyütür */
+            margin-bottom: 20px; /* Fotoğraf ile tablo arasında boşluk ekler */
+        }
+
+        .contact-table {
+            width: 90%; /* Tabloyu biraz küçültüyoruz */
+            margin: 20px auto 0; /* Tabloyu ortalıyoruz ve biraz boşluk ekliyoruz */
+            height: auto; /* Tabloyu dikine küçültüyoruz */
+        }
+
+        .footer-section {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-links {
+        }
+
+        .footer-social {
+            margin-top: 20px;
+        }
+    }
+}

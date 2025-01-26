@@ -1,0 +1,86 @@
+/* Genel stil iyileştirmeleri */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* İletişim sayfası stili */
+.contact-section {
+    padding: 50px 10%;
+    background-color: #fff;
+    color: #cf8c0eea;
+    text-align: center;
+}
+
+    .contact-section h1 {
+        font-size: 36px;
+        color: #cf8c0eea;
+        margin-bottom: 20px;
+    }
+
+    .contact-section p {
+        font-size: 18px;
+        margin-bottom: 40px;
+        color: #555;
+    }
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr; /* Her satıra bir bilgi */
+    gap: 20px; /* Bilgiler arasında boşluk */
+    padding: 20px; /* İç boşluk */
+    max-width: 500px; /* Genişliği sınırla, isteğe bağlı */
+    margin: 0 auto; /* Ortala */
+}
+
+.info-item {
+    background: #f9f9f9; /* Bilgi kutularına açık arka plan */
+    border: 1px solid #ddd; /* Kutulara ince kenarlık */
+    border-radius: 8px; /* Hafif yuvarlatılmış köşeler */
+    padding: 15px; /* İç boşluk */
+    text-align: left; /* Sol hizalama */
+}
+
+    .info-item h3 {
+        margin-bottom: 8px;
+        color: #cf8c0eea;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Instagram ve WhatsApp ikonlarının stilleri */
+    .info-item i {
+        font-size: 1.5em;
+        margin-right: 10px;
+        color: #cf8c0eea;
+    }
+
+    /* Linklerin ve metinlerin stilleri */
+    .info-item p,
+    .info-item a {
+        font-size: 16px;
+        color: #555;
+    }
+
+.contact-info .info-item a:hover {
+    color: #ff6600;
+}
+
+/* Footer düzenlemeleri */
+.contact-page #colophon {
+    background-color: #fff; /* Arka plan rengini beyaz yapıyoruz */
+    color: #fff; /* Yazı rengini beyaz yapıyoruz */
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 30px 15px;
+    }
+}

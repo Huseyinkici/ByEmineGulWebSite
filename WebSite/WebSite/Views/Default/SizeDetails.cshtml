@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/public_html/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/public_html/sizeDetails.css">
+    <title>~ ÖLÇÜ BİLGİSİ ~</title>
+</head>
+<body class="contact-page">
+    <header>
+        <div class="logo">
+            <a href="https://byeminegul.com">
+                <img src="/public_html/logo.png" alt="Logo">
+            </a>
+        </div>
+        @await Component.InvokeAsync("CategoryGetList")
+    </header>
+    <div class="contact-section">
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="/public_html/x.png" alt="Contact image"/>
+            </div>
+            <div class="contact-text">
+                <table class="contact-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Sizden İstenen Ölçüler:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Göğüs ölçüsü:</td>
+                            <td>Sırtı dönerek alabilirsiniz (1 Numara)</td>
+                        </tr>
+                        <tr>
+                            <td>Bel ölçüsü:</td>
+                            <td>Beli sararak alabilirsiniz (2 Numara)</td>
+                        </tr>
+                        <tr>
+                            <td>Omuzdan boy ölçüsü:</td>
+                            <td>İstediğiniz uzunluğa kadar alabilirsiniz (Boyunu sevdiğiniz bir elbisenizi referans olarak alabilirsiniz) (6 Numara) </td>
+                        </tr>
+                        <tr>
+                            <td>Omuz + kol ölçüsü:</td>
+                            <td>Omuzdan bileğe kadar alabilirsiniz (4 ve 5 Numara)</td>
+                        </tr>
+                        <tr>
+                            <td>Bilek ölçüsü:</td>
+                            <td>El bileğini çevreleyerek ölçebilirsiniz (7 Numara)</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <p>Ekstra Olarak "Boy - Beden - Kilo" Bilgilerini İstiyoruz.</p>
+                                <br />
+                                <p><span>~ Tüm ölçüleri paysız, olduğu gibi istiyoruz. Ne bol ne de sıkı. Biz belirli bolluklar ekliyoruz ~</span></p>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="footer-section">
+                <!-- Logo and Site Title -->
+                <div class="footer-logo">
+                    <a href="https://byeminegul.com">
+                        <img src="/public_html/logo.png" alt="Logo" class="footer-logo-img">
+                    </a>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <h3>İletişim ve Bilgiler</h3>
+                    <ul>
+                        <li><a href="/Default/Contact/">Bize Ulaşın</a></li>
+                        <li><a href="/Default/Shipping/">Gönderim ve Teslimat</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media and Copyright -->
+                <div class="footer-social">
+                    <p class="footer-copyright">© 2024 TrioCes Design | Powered by TrioCes Design</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

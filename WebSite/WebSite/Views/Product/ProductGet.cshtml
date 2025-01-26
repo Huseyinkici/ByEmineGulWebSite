@@ -1,0 +1,30 @@
+﻿@model WebSite.Data.Models.Product
+@{
+    ViewData["Title"] = "ProductGet";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>Ürün Güncelleme Sayfası</h1>
+@using (Html.BeginForm("ProductUpdate", "Product", FormMethod.Post))
+{
+    @Html.Label("Ürün ID")
+    @Html.TextBoxFor(x => x.ProductID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ürün Adı")
+    @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Ürün Fiyatı")
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <br />
+    @Html.Label("Fotoğraf URL")
+    @Html.TextBoxFor(x => x.ImageURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kategori")
+    @* @Html.TextBoxFor(x => x.CategoryID, new { @class = "form-control" }) *@
+    @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.ProductDescription, new { @class = "form-control", style = "width: 100%; height: 200px;" })
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+}

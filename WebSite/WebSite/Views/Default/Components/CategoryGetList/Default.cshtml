@@ -1,0 +1,13 @@
+﻿@model IEnumerable<WebSite.Data.Models.Category> 
+
+<nav> 
+	<ul>
+		<li><a href="https://byeminegul.com">Anasayfa</a></li>
+@foreach (var item in Model)
+{
+	<li><a href="/Default/CategoryDetails/@item.CategoryID">@item.CategoryName</a></li>
+}
+		<li><a href="/Default/AllProducts/">Tüm Ürünler</a></li>
+		<li><a href="/Default/SizeDetails/">Ölçü Bilgisi</a></li>
+	</ul>
+	</nav>

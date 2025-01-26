@@ -1,0 +1,276 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    height: 50px; /* Logo boyutunu kısıtladığınızdan emin olun */
+    max-width: 150px; /* Genişliği de kontrol altına alın */
+    object-fit: contain; /* Boyutlandırmada doğru görünmesi için */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #FFF2D3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    flex: 1; /* Logo ve nav arasında boşluk bırakır */
+}
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #494747;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease; /* Hover için transform ekledik */
+        }
+
+            nav ul li a:hover {
+                color: burlywood;
+                transform: translateY(10px); /* Hover efektine hafif yukarı hareket ekledik */
+            }
+
+/* Gönderim ve Teslimat Sayfası Stili */
+.shipping-section {
+    padding: 50px 10%;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+    .shipping-section h1 {
+        font-size: 36px;
+        color: #52575D;
+        margin-bottom: 20px;
+    }
+
+.shipping-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.shipping-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.shipping-info .info-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .shipping-info .info-item h2 {
+        font-size: 22px;
+        color: #52575D;
+        margin-bottom: 10px;
+    }
+
+.shipping-info .info-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Genel footer stili */
+.site-footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    color: #333;
+}
+
+    .site-footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+.footer-tagline {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+    .footer-links h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-links ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+            .footer-links ul li a:hover {
+                color: #000;
+            }
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+    .footer-social h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+    .social-icons .social-icon {
+        font-size: 20px;
+        color: #555;
+        text-decoration: none;
+    }
+
+        .social-icons .social-icon:hover {
+            color: #000;
+        }
+
+.footer-copyright {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Medya Sorguları */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        margin-bottom: 20px;
+    }
+
+    .new-models h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divider {
+        flex-direction: column;
+    }
+
+        .divider::before,
+        .divider::after {
+            display: none;
+        }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .product-card {
+        padding: 20px;
+    }
+
+    .product-image {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .new-models h2 {
+        font-size: 24px;
+    }
+
+    .new-models .button {
+        font-size: 14px;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+}

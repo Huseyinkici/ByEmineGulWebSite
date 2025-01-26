@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\wn\Desktop\MainHali</_PublishTargetUrl>
+    <History>True|2024-12-07T19:54:31.7516689Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Views/Default/Contact.cshtml">
+      <publishTime>12/09/2024 12:23:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
